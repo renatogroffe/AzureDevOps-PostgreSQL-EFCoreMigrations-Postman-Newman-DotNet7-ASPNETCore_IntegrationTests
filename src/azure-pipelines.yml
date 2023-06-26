@@ -83,7 +83,6 @@ stages:
         cd $(Path_Project)
         dotnet ef migrations add IntegrationTests
         dotnet ef database update
-        echo 'Migrations do Entity Framework Core executadas com sucesso'
       displayName: Executar Migrations criando a tabela de Chamados
     - script: |
         dotnet publish $(Path_Project) -c Release -o app
