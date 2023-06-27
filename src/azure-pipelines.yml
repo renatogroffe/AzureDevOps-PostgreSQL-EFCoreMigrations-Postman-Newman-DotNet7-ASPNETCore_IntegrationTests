@@ -44,7 +44,6 @@ stages:
     - script: |
         sleep 10s
         psql postgresql://postgres:Postgres2022!@localhost:5432/postgres -c 'CREATE DATABASE basesuporte;'
-        echo 'basesuporte criada com sucesso!'
       displayName: Criar banco basesuporte
     - task: replacetokens@5
       inputs:
